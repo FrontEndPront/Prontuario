@@ -1,3 +1,13 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+}
+
 .main {
     height: 95vh;
     display: grid;
@@ -18,9 +28,19 @@
 .navbar {
     grid-area: b;
     background-color: aqua;
+}
+ul {
+    padding: 0;
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    grid-auto-flow: column;
+}
+li {
+    letter-spacing: 2px;
+    padding: 10px;
 }
 .conteudo {
     grid-area: c;
