@@ -28,6 +28,7 @@ body {
 .navbar {
     grid-area: b;
     background-color: aqua;
+    border: 1px solid black;
 }
 ul {
     padding: 0;
