@@ -1,0 +1,42 @@
+.main {
+    height: 95vh;
+    display: grid;
+    grid-template-areas: 
+    "a a a a    a a a a    a a a a"
+    "b b c c    c c c c    c c c c"
+    "b b c c    c c c c    c c c c"
+    "b b c c    c c c c    c c c c"
+    "b b c c    c c c c    c c c c"
+    "b b c c    c c c c    c c c c"
+    ;
+    gap: 5px;
+}
+.header {
+    grid-area: a;
+    background-color: aqua;
+}
+.navbar {
+    grid-area: b;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.conteudo {
+    grid-area: c;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}  
+
+.circulo {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: 1px solid black;
+}
+
+.r {
+    border-radius: 10px;
+}
