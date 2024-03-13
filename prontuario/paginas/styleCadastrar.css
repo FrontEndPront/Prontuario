@@ -1,0 +1,161 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*                                      Variaveis de cores*/
+:root {
+    --main-color: #;
+    --secondary-color: #;
+    --shadow-color: #;
+    --text-color-900: #;
+    --text-color-700: #;
+    --bg-color: #;
+    --bg-light-color: #;
+}
+
+
+/*                                      Usos avulsos*/
+.hidden {
+    display: none;
+}
+
+.shadow {
+    border: 1px solid rgba(0, 0, 0, 0.527);
+}
+
+.icon {
+    color: black;
+    padding-right: 7px;
+    font-size: 30px;
+}
+
+/* .btn {
+
+} */
+
+/*                                      Inicio Css body*/
+/* body {
+    font-family: ;
+    font-weight: ;
+} */
+
+.main {
+    height: 95vh;
+    display: grid;
+    grid-template-areas:
+    "a a a a    a a a a    a a a a"
+    "c c c c    c c c c    c c c c"
+    "c c c c    c c c c    c c c c"
+    "c c c c    c c c c    c c c c"
+    "c c c c    c c c c    c c c c"
+    "c c c c    c c c c    c c c c"
+    "c c c c    c c c c    c c c c"
+    "c c c c    c c c c    c c c c"
+    "c c c c    c c c c    c c c c"
+    "c c c c    c c c c    c c c c"
+    "c c c c    c c c c    c c c c"
+    ;
+
+    /*
+        .header = grid-area: a;
+        .navbar = grid-area: b;
+        .conteudo = grid-area: c;
+    
+    */
+}
+/*                                      Inicio Css Header*/
+.header {
+    grid-area: a;
+    background-color: aqua;
+    display: flex;
+    min-height: 60px;
+}
+
+.header .logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 0 0 85%;
+    max-width: 85%;
+    padding-left: 5%;
+}
+
+#nameDoctor {
+    margin-right: 10px;
+}
+
+.header .gear {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 0 0 15%;
+    max-width: 15%;
+    padding-right: 5%;
+}
+
+/*                                      Inicio Css Conteudo*/
+.conteudo {
+    grid-area: c;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+}
+
+.titleConteudo {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerConteudo {
+    display: flex;
+    
+}
+.containerConteudo .inputA,
+.containerConteudo .inputB,
+.containerConteudo .inputC {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.containerConteudo .inputA {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+}
+
+.containerConteudo .inputB {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+}
+
+.containerConteudo .inputC {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+}
+
+.inputStyle {
+    width: 70%;
+    border-radius: 10px;
+    padding: 4px;
+    margin-bottom: 20px;
+}
+
+label {
+    margin: 4px;
+}
+
+/*                                                          @Medias*/
+
+@media screen and (max-width: 1050px) {
+    
+}
+
+@media screen and (max-width: 650px) {
+
+    
+}
