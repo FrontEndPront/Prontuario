@@ -5,7 +5,7 @@
 }
 /*                                      Variaveis de cores*/
 :root {
-    --main-color: #;
+    --main-color: #a3ddbe;
     --secondary-color: #;
     --shadow-color: #;
     --text-color-900: #;
@@ -25,24 +25,33 @@
 }
 
 /*                                      Inicio Css body*/
-/* body {
+body {
     font-family: ;
     font-weight: ;
-} */
+    background-color: var(--main-color);
+} 
 
 .main {
     height: 95vh;
     display: grid;
     grid-template-areas:
-    "a a a a    a a a a    a a a a"
     "b c c c    c c c c    c c c c"
+    "b c c c    c c c c    c c c c"
+    "b c c c    c c c c    c c c c"
+    "b c c c    c c c c    c c c c"
+
+    "b c c c    c c c c    c c c c"
+    "b c c c    c c c c    c c c c"
+    "b c c c    c c c c    c c c c"
+    "b c c c    c c c c    c c c c"
+
     "b c c c    c c c c    c c c c"
     "b c c c    c c c c    c c c c"
     "b c c c    c c c c    c c c c"
     "b c c c    c c c c    c c c c"
     ;
-    gap: 5px;
-
+    gap: 30px;
+    margin: 10px;
     /*
         .header = grid-area: a;
         .navbar = grid-area: b;
@@ -52,7 +61,6 @@
 }
 
 .header {
-    grid-area: a;
     background-color: aqua;
     display: flex;
 }
