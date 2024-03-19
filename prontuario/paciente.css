@@ -27,6 +27,13 @@
    border: 1px solid rgba(0, 0, 0, 0.527);
 }
 
+.circulo {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: black;
+}
+
 /*                                      Inicio Css body*/
 body {
    font-family:'Poppins', sans-serif;
@@ -181,11 +188,41 @@ font-size: 1.6rem;
 .conteudo {
    grid-area: c;
    background-color: var(--secondary-color);
-   display: flex;
-   justify-content: center;
-   align-items: center;
    border-radius: 10px;
 
+}
+
+.conteudo .container-info {
+    height: 50%;
+    width: 100%;
+    display: flex;
+}
+
+.conteudo .container-info .foto {
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 0 0 20%;
+    max-width: 20%;
+     
+}
+
+.conteudo .container-info .dados {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 0 0 80%;
+    max-width: 80%;
+
+}
+
+.conteudo .container-endereco {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    back
 }
 
 /*                                                          @Medias*/
