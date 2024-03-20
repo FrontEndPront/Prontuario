@@ -28,11 +28,13 @@
 }
 
 .circulo {
-    height: 50px;
-    width: 50px;
+    height: 150px;
+    width: 150px;
     border-radius: 50%;
-    background-color: black;
+    background-color: var(--white-color);
+    
 }
+
 
 /*                                      Inicio Css body*/
 body {
@@ -189,7 +191,9 @@ font-size: 1.6rem;
    grid-area: c;
    background-color: var(--secondary-color);
    border-radius: 10px;
-
+   letter-spacing: 1px;
+   font-weight: 500;
+   font-size: 24px;
 }
 
 .conteudo .container-info {
@@ -201,30 +205,62 @@ font-size: 1.6rem;
 .conteudo .container-info .foto {
     height: 100%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
     align-items: center;
     flex: 0 0 20%;
     max-width: 20%;
-     
+    
+}
+
+.conteudo .dados-mobile {
+   display: none;
 }
 
 .conteudo .container-info .dados {
     height: 100%;
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
     flex: 0 0 80%;
     max-width: 80%;
+   flex-direction: column;
+   justify-content: center;
+   align-items: start;
+}
 
+.conteudo .container-info .dados strong {
+   margin-left: 20px;
 }
 
 .conteudo .container-endereco {
     height: 50%;
     width: 100%;
     display: flex;
-    back
 }
 
+.conteudo .container-endereco .endereco {
+   display: flex;
+}
+
+.conteudo .container-endereco .endereco .endereco-left {
+   height: 100%;
+   display: flex;
+   flex: 0 0 50%;
+   max-width: 50%;
+   justify-content: center;
+   align-items: flex-start;
+   flex-direction: column;
+   padding-left: 50px;
+}
+
+.conteudo .container-endereco .endereco .endereco-right {
+   height: 100%;
+   display: flex;
+   flex: 0 0 50%;
+   max-width: 50%;
+   justify-content: center;
+   align-items: flex-end;
+   flex-direction: column;
+   padding-left: 50px;
+}
 /*                                                          @Medias*/
 
 
@@ -239,9 +275,30 @@ font-size: 1.6rem;
    "b b c c    c c c c    c c c c"
    ;
    }
+
+   .conteudo {
+      grid-area: c;
+      background-color: var(--secondary-color);
+      border-radius: 10px;
+      letter-spacing: 1px;
+      font-weight: 500;
+      font-size: 17px;
+   }
+   .circulo {
+      height: 100px;
+      width: 100px;
+   }
+
+   .navbar ul li {
+      letter-spacing: 1px;
+      padding: 20px 0;
+      font-size: 1.5rem;
+      font-weight: 600;
+   }
+
 }
 
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 930px) {
    .main {
    grid-template-areas:
    "b b b b    b b b b    b b b b"
@@ -296,5 +353,35 @@ font-size: 1.6rem;
 
    .buttonPosition {
       margin-top: 0;
+   }
+
+   .circulo {
+      display: none;
+   }
+
+   .conteudo .container-info .foto {
+      display: none;
+   }
+
+   .conteudo .container-info .dados {
+      display: none;
+  }
+
+  .conteudo .dados-mobile {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+}
+
+
+
+}
+
+@media screen and (max-width: 530px) {
+
+   .conteudo {
+      font-size: 15px;
    }
 }
